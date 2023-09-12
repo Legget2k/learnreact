@@ -9,10 +9,7 @@ function App() {
                       {picture: <img alt="fox" src={imagen1}/>}, {name: <span>fooxi</span>},
                       {picture: <img alt="fox" src={imagen2}/>}, {name: <span>fooxi very happy</span>}
                      ]
-
-                       console.log(reyesGodos[0].name);
-
-
+                     
   return (
     <div className="App">
       <article className="cards-container">
