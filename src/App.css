@@ -71,3 +71,28 @@ span::first-letter{
   text-transform: capitalize;
   color: #c7c7c7;
 }
+
+input{
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 6px 20px;
+  margin: 20px;
+  outline: none;
+  font-size: 1em;
+  text-align: center;
+}
+
+button{
+  border-radius: 30px;
+  padding: 8px;
+  font-weight: bolder;
+  background-color: #251e1e;
+  color: #fff;
+  margin: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover{
+  background-color: #181515;
+}
