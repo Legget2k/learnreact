@@ -1,16 +1,38 @@
 import imagen0 from "./images/image0.jpg";
 import imagen1 from "./images/image1.jpg";
 import imagen2 from "./images/image2.jpg";
+import imagen3 from "./images/image3.jpg";
 import { useRef } from "react";
 import './App.css';
 
 function App() {
+  
+  /*script app0--------------------------------------------------*/
+  const alterImg=(e)=>{
+    if(e.target.src.includes("base64")){ //la img de sombrero tiene como nombre base 64 comprobar con alert(imagen3)
+      e.target.style.visibility="hidden";
+      e.target.parentNode.style.backgroundColor = "#251e1e";
+      e.target.parentNode.style.border = "0px";
+    }else{
+      e.target.src=imagen3;
+    }
+  }
+
+  const alterTxt=(e)=>{
+    if(e.target.innerHTML === "visto"){
+      e.target.innerHTML = "";
+    }else{
+      e.target.innerHTML = "visto";
+    }
+  }
 
   const reyesGodos = [
-  { picture: <img alt="stormTrooper" src={imagen0} /> }, { name: <span>storm trooper</span> },
-  { picture: <img alt="fox" src={imagen1} /> }, { name: <span>fooxi</span> },
-  { picture: <img alt="fox" src={imagen2} /> }, { name: <span>fooxi very happy</span> }
+  { picture: <img onClick={alterImg} alt="stormTrooper" src={imagen0} /> }, { name: <span onClick={alterTxt}>storm trooper</span> },
+  { picture: <img onClick={alterImg} alt="fox" src={imagen1} /> }, { name: <span onClick={alterTxt}>fooxi</span> },
+  { picture: <img onClick={alterImg} alt="fox" src={imagen2} /> }, { name: <span onClick={alterTxt}>fooxi very happy</span> }
   ]; //used in "cards-container"
+  /*script app0/////////////////////////////////////////////////*/
+
 
   /*script app1--------------------------------------------------*/
   const refElement = useRef(); //importamos el hook useRe de react
