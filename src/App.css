@@ -1,59 +1,3 @@
-.user-none{
-  user-select: none;
-}
-
-.App{ /*body de la app*/
-  background-color: #251e1ecb;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards-container{ /*contenedor de app0*/
-  display: flex;
-  justify-content: space-evenly;
-  align-items: self-start;
-  max-width: 1600px;
-  max-height: fit-content;
-  width: 100%;
-  padding: 50px;
-  background-color: #251e1e
-}
-
-.card{ /*app0, app1img*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  border: 2px solid black;
-  background-color: #181515;
-  border-radius: 10px;
-}
-.card:hover{ /*app0*/
-  background-color: #251e1e;
-  cursor: pointer;
-}
-
-.app1-container{
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  padding: 50px;
-  max-width: 1600px;
-  background-color: #251e1e;
-}
-
-.app1{
-  background-color: #181515;
-  border: 2px solid #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
-
 img{
   max-width: 350px;
   height: 300px;
@@ -63,7 +7,7 @@ img{
 
 span{
   color: #fff;
-  font-size: 2.8em;
+  font-size: 1.3em;
   user-select: none;
   text-align: center;
 }
@@ -96,3 +40,83 @@ button{
 button:hover{
   background-color: #181515;
 }
+
+.App{ /*body de la app*/
+  background-color: #251e1ecb;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{ /*contenedor de apps*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: self-start;
+  max-width: 1600px;
+  max-height: fit-content;
+  width: 100%;
+  padding: 50px;
+  background-color: #251e1e
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border: 2px solid black;
+  background-color: #181515;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.card:hover{
+  background-color: #251e1e;
+  cursor: pointer;
+}
+
+.app1{
+  background-color: #181515;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.app2{
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.app2-count h1{
+  text-align: center;
+  color: #c7c7c7;
+  background-color: #251e1e;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.app2-sumator input{
+  margin: 5px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.app2-king-afi p{
+  color: #fff;
+  font-size: 1.5em;
+}
+.king-nombre{
+  color: red;}
+.king-aficion{
+  color: green;}
+
+  .app2-cambiazo label{
+    color: #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
