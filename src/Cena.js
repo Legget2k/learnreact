@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function Cena( {nombre, color, precio, setTotal} ) {
+
       const comprar =(elemento)=>{
             setTotal( (e)=> e+precio);
             elemento.target.parentNode.parentNode.parentNode.style.display="none";
       }
+
       const ruta="https://www.html6.es/img/rey_"
       const imagen = `${ruta}${nombre.toLowerCase()}.png`;
       return (
@@ -24,4 +26,4 @@ function Cena( {nombre, color, precio, setTotal} ) {
   )
 }
 
-export default Cena
+export default Cena;
