@@ -2,8 +2,13 @@
       color: white;
       padding: 2px 15px 20px;
       margin-bottom: 10px;
+      width: 47%;
 }
-
+.caja-central{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+}
 img{
       width: 100%;
 }
